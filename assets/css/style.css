@@ -85,6 +85,10 @@ body {
  * 2 - Header
  */
  
+#header {
+	position: relative;
+}
+
 #header-inner {
     padding-top: 37px;
     padding-bottom: 37px;
@@ -194,6 +198,50 @@ body {
 	color: #ffc022;
 }
 
+/*mobi menu*/
+#main-nav-mobi {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	background: #333333;
+	text-align: center;
+	z-index: 10;
+}
+
+#main-nav-mobi ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+#main-nav-mobi ul li {
+	position: relative;
+	text-align: left;
+	border-top: 1px solid rgba(228, 228, 228, 0.05);
+	cursor: pointer;
+}
+
+#main-nav-mobi ul li:first-child {
+	border-top: 0;
+}
+
+#main-nav-mobi > ul > li > a {
+	text-decoration: none;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 50px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#main-nav-mobi ul li:hover {
+	background-color: #000;
+}
+
+#main-nav-mobi ul li:hover a {
+	color: #ffb600;
+}
 
 /*
  * 2.4 - Btn menu
@@ -206,6 +254,7 @@ body {
 	position: relative;
 	margin-top: 6px;
 	display: none;
+	transition: all .35s;
 }
 
 .btn-menu:after, .btn-menu:before, .btn-menu span {
@@ -224,6 +273,22 @@ body {
 
 .btn-menu:after {
 	bottom: 0;
+}
+
+#btn-menu.active span {
+
+}
+
+#btn-menu.active:before {
+	
+}
+
+#btn-menu.active:after {
+	
+}
+
+#btn-menu.active {
+
 }
 
 /*
